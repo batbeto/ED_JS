@@ -6,7 +6,7 @@ class Node{
     }
 }
 
-class binaryTree{
+class BinaryTree{
     constructor(){
         this.root = null
     }
@@ -200,4 +200,28 @@ class binaryTree{
     }
 }
 
-const 
+const binaryTree = new BinaryTree();
+
+
+binaryTree.add(9);
+binaryTree.add(4);
+binaryTree.add(17);
+binaryTree.add(3);
+binaryTree.add(6);
+binaryTree.add(22);
+binaryTree.add(5);
+binaryTree.add(7);
+binaryTree.add(20);
+
+console.log(binaryTree.findMinSize());
+console.log(binaryTree.findMaxSize());
+console.log(binaryTree.isBalanced());
+binaryTree.add(10);
+console.log(binaryTree.findMinSize());
+console.log(binaryTree.findMaxSize());
+console.log(binaryTree.isBalanced());
+console.log('inOrder: ' + binaryTree.inOrder());
+console.log('preOrder: ' + binaryTree.preOrder());
+console.log('postOrder: ' + binaryTree.postOrder());
+
+console.log('levelOrder: ' + binaryTree.levelOrder());
